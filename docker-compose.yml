@@ -16,6 +16,9 @@ services:
     networks:
       - travellist
 
+    depends_on:
+      - db
+
   db:
     image: mysql:5.7
     container_name: travellist-db
